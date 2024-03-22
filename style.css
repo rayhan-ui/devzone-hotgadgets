@@ -211,13 +211,30 @@ body{
 
 
 .lastcontent {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     height: auto;
     margin: auto;
     margin-top: 100px;
 }
+
+.lastcontent ul{
+    padding: 0;
+}
+
+.lastcontent ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.lastcontent ul li a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
 
 footer{
     background-color: #FDE09D;
