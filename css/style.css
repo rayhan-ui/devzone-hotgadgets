@@ -11,10 +11,16 @@ body{
 }
 
 .header{
-    display: flex;
     margin: auto;
     justify-content: space-between;
     margin-top: 35px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .img {
+    display: flex;
     align-items: center;
 }
 
@@ -23,13 +29,21 @@ body{
 }
 .header nav ul{
     list-style-type: none;
-    padding-left: 20px;
+    padding: 0;
 }
 .header nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-weight: 500;
+    padding: 10px 20px;
+}
+.header nav ul li a:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 10px;
 }
 
 /* section1 */
@@ -38,13 +52,24 @@ body{
     display: flex;
     margin: auto;
     align-items: center;
+    flex-direction: column;
 }
-.section1 .msg{}
+.section1 .msg{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 img{
+    width: 100%;
+    height: 100%;
+}
 .section1 .msg h1{
     font-size: 45px;
 }
 .section1 .msg p{
     font-size: 20px;
+    text-align: center;
 }
 .section1 .msg button{
     background-color: black;
@@ -55,7 +80,7 @@ body{
     cursor: pointer;
 }
 .section1 img{
-    height: 600px;
+    height: 100%;
 }
 
 /* section 2 */
@@ -78,6 +103,7 @@ body{
     margin: auto;
     justify-content: center;
     gap: 30px;
+    flex-direction: column;
 }
 .section3 .part{
     margin: auto;
@@ -138,23 +164,37 @@ body{
 .three-flex{
     display: flex;
     margin: auto;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .section5{
     display: flex;
     align-items: center;
     margin: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.section5 .left, .section5 .right{
+    width: 100%;
+    gap: 10px;
+    padding: 0px 0px;
+
 }
 .one, .two, .three{
-    width: 300px;
-    height: 200px;
-    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 40px rgba(224, 224, 224, 0.893);
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin: 30px 15px;
-    padding: 5px;
+    gap: 10px;
+    padding: 20px 0px;
+
 }
 
 .one h1, .two h1, .three h1{
@@ -163,9 +203,10 @@ body{
     padding-top: 10px;
     font-weight: 600;
 }
-
-.section6 img{
-    max-width: 100%;
+.three-flex img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 
